@@ -1,12 +1,8 @@
-import React, {useState} from 'react';
-
+import React from 'react';
 import './App.css';
-import Player from './Player';
-import Dice from './Dice';
-
+import Player from './components/Player';
 
 const App = () => {
-
   return (
     <div className="App">
       <h1>Squid Game's Rolls Dice on Life</h1>
@@ -18,7 +14,6 @@ const App = () => {
           <Player />
         </div>
       </div>
-      <Dice />
     </div>
   );
 }
