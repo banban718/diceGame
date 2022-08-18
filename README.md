@@ -1,29 +1,29 @@
 # Squid Game's Rolls on Life
 
 ## Service Requirement
-[x] Create multi-user service based dice-rolling game
-[x] Incorporate data persistence
-[x] Create both the service and simple front end
-[x] Only a minimal amount of data should be stored on the client
+- [x] Create multi-user service based dice-rolling game
+- [x] Incorporate data persistence
+- [x] Create both the service and simple front end
+- [x] Only a minimal amount of data should be stored on the client
 
 ## Game Requirements
-[x] See high scores for all users 
-[x] See your high score
-[x] Rolling: 1.) Rolls should be done on the server side 2.) The front end should display your results
+- [x] See high scores for all users 
+- [x] See your high score
+- [x] Rolling: 1.) Rolls should be done on the server side 2.) The front end should display your results
 
 ## Delivery
-[x] Create a public Github
-[ ] Provide the link to the repo 
-[ ] Provide a working demo link (deployed to a free tier AWS, Heroku, etc)
+- [x] Create a public Github
+- [ ] Provide the link to the repo 
+- [ ] Provide a working demo link (deployed to a free tier AWS, Heroku, etc)
 
 ## Optional Challenges
-[] Automated tests
-[] Different numbers of dice and high scores for each quantity
-[] Different types of dice (4,6,8,10,12,20, etc sided)
-[] High score of the day
-[] More robust user registration and storage
-[] A nice UI/UX for rolling the dice, highscores, and user data
-[] Anything else you would like to show us!
+- [] Automated tests
+- [] Different numbers of dice and high scores for each quantity
+- [] Different types of dice (4,6,8,10,12,20, etc sided)
+- [] High score of the day
+- [] More robust user registration and storage
+- [] A nice UI/UX for rolling the dice, highscores, and user data
+- [] Anything else you would like to show us!
 
 # Getting Started with Create React App
 
