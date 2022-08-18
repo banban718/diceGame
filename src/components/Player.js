@@ -20,16 +20,17 @@ const Player = () => {
                 </div>
             )
         : 
-            ( <div>
-                <form onSubmit={handleSubmit}>
+            ( <div >
+                <form onSubmit={handleSubmit} >
                     <input
+                        className="nameInput"
                         type="text"
                         name={playerName}
                         id="name"
-                        placeholder={playerName ? "Enter name": playerName}
+                        placeholder={"Enter name"}
                         onChange={e => setPlayerName(e.target.value)}
                     />
-                    <button type="submit">Submit</button>
+                    <button className="nameButton" type="submit">Submit</button>
                 </form>
             </div>)
         }

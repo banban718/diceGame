@@ -33,7 +33,7 @@ const Score = ({ playerName }) => {
                         (<div>
                             {`${playerName} rolled a ${currentScore}!`}
                             <br/>
-                            Total Score: {Math.max(currentScore, totalScore)} 
+                            Total Score: { totalScore } 
                         </div>)
                         : null
                     }

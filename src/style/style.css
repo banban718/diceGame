@@ -30,8 +30,10 @@
   font-size: 50px;
   font-family: 'Courier New', Courier, monospace;
 }
+
 .scoreTracker {
-  /* display: table; */
+  margin-left: 50px;
+  margin-right: 50px;
   flex-wrap: nowrap;
   flex-direction: row;
 }
@@ -47,6 +49,28 @@
   font-size: 16px;
   margin-left: 200px;
   margin-right: 200px;
+  border-radius: 15px;
+}
+
+.nameInput {
+  width: 25%;
+  padding: 25px 30px;
+  margin: 10px 5px;
+  margin-left: 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.nameButton {
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 25px 30px;
+  text-decoration: none;
+  margin: 4px 2px;
+  border-radius: 10px;
 }
 
 .squidWallpaper {
