@@ -1,8 +1,5 @@
 # Squid Game's Rolls on Life
 
-![squidGame](https://user-images.githubusercontent.com/13818954/185323274-4b1a1f71-870d-4e3f-919d-98b30d4080a3.png)
-
-
 ## Service Requirement
 - [x] Create multi-user service based dice-rolling game
 - [x] Incorporate data persistence
