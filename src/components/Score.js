@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { faker } from '@faker-js/faker';
+// import { faker } from '@faker-js/faker';
 // import * as faker from '@faker-js/faker';
 import { MAX_NUMBER_OF_ROLLS, DICE_VALUE } from './constants';
 import '../style/style.css';
@@ -15,11 +15,13 @@ const Score = ({ playerName }) => {
             alert(`You can only roll this button ${MAX_NUMBER_OF_ROLLS} times !!!`);
         } else {
             // Could use Math.ceil and Math random to generate int
-            const numberRolled = faker.datatype.number({
-                min: DICE_VALUE.MIN, 
-                max: DICE_VALUE.MAX
-            });
-            // const numberRolled = 1;
+            // const numberRolled = faker.datatype.number({
+            //     min: DICE_VALUE.MIN, 
+            //     max: DICE_VALUE.MAX
+            // });
+            DICE_VALUE.MIN = 1;
+            DICE_VALUE.MAX = 1;
+            const numberRolled = 1;
             setTotalScore(totalScore + numberRolled);
             setCurrentScore(numberRolled);
         }
