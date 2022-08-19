@@ -19,6 +19,7 @@ const Score = ({ playerName }) => {
             //     min: DICE_VALUE.MIN, 
             //     max: DICE_VALUE.MAX
             // });
+            const numberRolled = 1;
             setTotalScore(totalScore + numberRolled);
             setCurrentScore(numberRolled);
         }
