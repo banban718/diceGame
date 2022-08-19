@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 // import { faker } from '@faker-js/faker';
-// import * as faker from '@faker-js/faker';
 import { MAX_NUMBER_OF_ROLLS, DICE_VALUE } from './constants';
 import '../style/style.css';
 
@@ -20,7 +19,7 @@ const Score = ({ playerName }) => {
             //     max: DICE_VALUE.MAX
             // });
             DICE_VALUE.MIN = 1;
-            DICE_VALUE.MAX = 1;
+            DICE_VALUE.MAX = 6;
             const numberRolled = 1;
             setTotalScore(totalScore + numberRolled);
             setCurrentScore(numberRolled);
