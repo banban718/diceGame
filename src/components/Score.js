@@ -30,10 +30,10 @@ const Score = ({ playerName }) => {
 
     return (
         <div className="scoreTracker">
-            <div>Welcome {playerName}!</div>
                 <div>
                     <Dice className="cube" onRoll={(currentScore) => rollDice(currentScore)}  />
                     {/* <button className="rollDiceButton" onClick={rollDice}>Roll dice</button> */}
+                    <div>Welcome {playerName}!</div>
                     {currentScore !== 0  ? 
                         (<div>
                             {`${playerName} rolled a ${currentScore}!`}
