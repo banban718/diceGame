@@ -14,12 +14,12 @@ const Score = ({ playerName }) => {
             document.getElementsByClassName("rollDiceButton").disabled = true;
             alert(`You can only roll this button ${MAX_NUMBER_OF_ROLLS} times !!!`);
         } else {
-            //Could use Math.ceil and Math random to generate int
-            // const numberRolled = faker.datatype.number({
-            //     min: DICE_VALUE.MIN, 
-            //     max: DICE_VALUE.MAX
-            // });
-            const numberRolled = 1;
+            // Could use Math.ceil and Math random to generate int
+            const numberRolled = faker.datatype.number({
+                min: DICE_VALUE.MIN, 
+                max: DICE_VALUE.MAX
+            });
+            // const numberRolled = 1;
             setTotalScore(totalScore + numberRolled);
             setCurrentScore(numberRolled);
         }
