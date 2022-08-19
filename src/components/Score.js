@@ -2,13 +2,14 @@ import React, {useState} from "react";
 // import { faker } from '@faker-js/faker';
 import { MAX_NUMBER_OF_ROLLS, DICE_VALUE } from './constants';
 import '../style/style.css';
+import Dice from 'react-dice-roll';
 
 const Score = ({ playerName }) => {
     const [currentScore, setCurrentScore] = useState(0);
     const [totalScore, setTotalScore] = useState(0);
     const [rollCount, setRollerCount] = useState(1)
 
-    const rollDice = () => {
+    const rollDice = (currentScore) => {
         if(rollCount > MAX_NUMBER_OF_ROLLS) {
             document.getElementsByClassName("rollDiceButton").disabled = true;
             alert(`You can only roll this button ${MAX_NUMBER_OF_ROLLS} times !!!`);
@@ -21,8 +22,8 @@ const Score = ({ playerName }) => {
             DICE_VALUE.MIN = 1;
             DICE_VALUE.MAX = 6;
             const numberRolled = 1;
-            setTotalScore(totalScore + numberRolled);
-            setCurrentScore(numberRolled);
+            setTotalScore(totalScore + currentScore);
+            setCurrentScore(currentScore);
         }
         setRollerCount(rollCount + 1)
     }
@@ -31,7 +32,8 @@ const Score = ({ playerName }) => {
         <div className="scoreTracker">
             <div>Welcome {playerName}!</div>
                 <div>
-                    <button className="rollDiceButton" onClick={rollDice}>Roll dice</button>
+                    <Dice className="cube" onRoll={(currentScore) => rollDice(currentScore)}  />
+                    {/* <button className="rollDiceButton" onClick={rollDice}>Roll dice</button> */}
                     {currentScore !== 0  ? 
                         (<div>
                             {`${playerName} rolled a ${currentScore}!`}
