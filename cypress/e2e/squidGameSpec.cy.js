@@ -39,8 +39,6 @@ describe('Squid Game e2e tests', () => {
     cy.rollFirstDie();
     cy.assertAlertMessage();
 
-    // cy.rollSecondDie();
-    // cy.assertAlertMessage();
   })
 })
 
