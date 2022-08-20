@@ -20,22 +20,22 @@
 .leftplayer {
   text-align: left;
   color: red;
-  font-size: 50px;
+  font-size: 20px;
   font-family: 'Courier New', Courier, monospace;
+  margin: 30px;
 }
 
 .rightplayer {
   text-align: right;
   color: blue;
-  font-size: 50px;
+  font-size: 20px;
   font-family: 'Courier New', Courier, monospace;
+  margin: 30px;
 }
 
 .scoreTracker {
   margin-left: 50px;
   margin-right: 50px;
-  flex-wrap: nowrap;
-  flex-direction: row;
 }
 
 .rollDiceButton {
@@ -77,5 +77,10 @@
   background:url('../img/squidGame.png');
   background-repeat: no-repeat;
   background-size: 100% 100%; 
-  height: 100vh
+  height: 100vh;
+  display: flex;
+  flex: 1;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  flex-direction: row;
 }
