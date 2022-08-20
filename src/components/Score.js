@@ -10,8 +10,8 @@ const Score = ({ playerName }) => {
 
     const rollDice = (val) => {
         if(rollCount > MAX_NUMBER_OF_ROLLS) {
-            document.getElementsByClassName("rollDiceButton").disabled = true;
             alert(`You can only roll this button ${MAX_NUMBER_OF_ROLLS} times! Your total score is ${totalScore}`);
+            
             return;
         } else {
             setTotalScore(totalScore + val);
