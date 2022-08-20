@@ -19,12 +19,12 @@
 - [ ] Provide a working demo link (deployed to a free tier AWS, Heroku, etc)
 
 ## Optional Challenges
-- [ ] Automated tests
+- [x] Automated tests
 - [ ] Different numbers of dice and high scores for each quantity
 - [ ] Different types of dice (4,6,8,10,12,20, etc sided)
 - [ ] High score of the day
 - [ ] More robust user registration and storage
-- [ ] A nice UI/UX for rolling the dice, highscores, and user data
+- [x] A nice UI/UX for rolling the dice, highscores, and user data
 - [ ] Anything else you would like to show us!
 
 
