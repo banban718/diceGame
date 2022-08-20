@@ -15,11 +15,11 @@
 
 ## Delivery
 - [x] Create a public Github
-- [ ] Provide the link to the repo 
-- [ ] Provide a working demo link (deployed to a free tier AWS, Heroku, etc)
+- [x] Provide the link to the repo: https://github.com/banchecky/diceGame
+- [x] Provide a working demo link (deployed to a free tier AWS, Heroku, etc): https://squid-game-dice.herokuapp.com/
 
 ## Optional Challenges
-- [x] Automated tests
+- [x] Automated tests (Cypress)
 - [ ] Different numbers of dice and high scores for each quantity
 - [ ] Different types of dice (4,6,8,10,12,20, etc sided)
 - [ ] High score of the day
@@ -46,10 +46,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+### `npm run cypress:open`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Runs E2E Cypress tests
 
 ### `npm run build`
 
